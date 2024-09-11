@@ -1,0 +1,41 @@
+h2{
+    color: red;
+}
+h3{
+    color: orange;
+    size: 10%;
+}
+
+
+
+nav li a {
+    color: red;
+  }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+footer {
+    background-color: #333; /* dark gray background */
+    color: #fff; /* white text color */
+    padding: 10px;
+    text-align: center;
+  }
