@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sachin Raj Charupadikkal — Electronics Engineering Technician</title>
+<meta name="description" content="Electronics Engineering Technician in Cranbrook, BC. Embedded systems, PCB design, and hardware prototyping.">
+<style>
+:root{
+  --bg:#f4f7f9;--surface:#ffffffcc;--text:#122029;--muted:#566472;--line:#dbe2e8;--accent:#0a8f7c;--accent2:#2f6df6;--accent-ink:#fff;--node:10,143,124;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#070b10;--surface:#101821cc;--text:#e8f0f6;--muted:#93a3b2;--line:#1d2a36;--accent:#3ee0c4;--accent2:#6a9bff;--accent-ink:#04201b;--node:62,224,196;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#070b10;--surface:#101821cc;--text:#e8f0f6;--muted:#93a3b2;--line:#1d2a36;--accent:#3ee0c4;--accent2:#6a9bff;--accent-ink:#04201b;--node:62,224,196;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--accent)}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#prog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:20}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--surface);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;gap:6px;align-items:center;height:54px;overflow-x:auto}
+nav b{margin-right:auto;white-space:nowrap;font-family:ui-monospace,Menlo,Consolas,monospace}
+nav b i{color:var(--accent);font-style:normal}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;white-space:nowrap;padding:6px 12px;border-radius:99px;transition:.25s}
+nav a:hover{color:var(--text)}
+nav a.on{color:var(--accent-ink);background:var(--accent)}
+header.hero{padding:96px 0 72px;min-height:78vh;display:flex;flex-direction:column;justify-content:center}
+.tag{align-self:flex-start;font:13px ui-monospace,Menlo,Consolas,monospace;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:5px 14px;border-radius:99px;margin-bottom:20px;display:inline-flex;align-items:center;gap:8px}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(var(--node),.6)}100%{box-shadow:0 0 0 12px rgba(var(--node),0)}}
+h1{font-size:clamp(40px,9vw,72px);line-height:1.05;margin:0 0 14px;letter-spacing:-.03em}
+h1 span{background:linear-gradient(100deg,var(--accent),var(--accent2),var(--accent));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 6s linear infinite}
+@keyframes flow{to{background-position:200% center}}
+.role{font:clamp(16px,3.4vw,22px) ui-monospace,Menlo,Consolas,monospace;color:var(--muted);min-height:1.6em;margin-bottom:16px}
+.role::after{content:"▍";color:var(--accent);animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{font-size:18px;color:var(--muted);max-width:620px;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--text);background:var(--surface);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(var(--node),.25)}
+.btn.primary{background:linear-gradient(100deg,var(--accent),var(--accent2));color:var(--accent-ink);border-color:transparent}
+.scroll{margin-top:44px;font:12px ui-monospace,monospace;color:var(--muted);display:flex;align-items:center;gap:10px}
+.scroll i{width:1px;height:34px;background:linear-gradient(var(--accent),transparent);animation:drop 1.6s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+section{padding:56px 0;position:relative}
+h2{font-size:28px;margin:0 0 24px;letter-spacing:-.02em;display:flex;align-items:center;gap:14px}
+h2::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--accent),transparent);transform:scaleX(0);transform-origin:left;transition:transform 1s .2s}
+.in h2::after{transform:scaleX(1)}
+h2 small{font:14px ui-monospace,monospace;color:var(--accent)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--surface);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:22px;position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;transform-style:preserve-3d}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),rgba(var(--node),.16),transparent 60%);opacity:0;transition:opacity .3s}
+.card:hover{border-color:var(--accent);box-shadow:0 14px 34px rgba(var(--node),.18)}
+.card:hover::before{opacity:1}
+.card h3{margin:0 0 6px;font-size:17px;position:relative}
+.card p{margin:0;color:var(--muted);font-size:15px;position:relative}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:6px 15px;font-size:14px;transition:.25s}
+.chip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.skills h3{font:13px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin:24px 0 12px}
+.skills h3:first-of-type{margin-top:0}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:24px;position:relative}
+.tl .fill{position:absolute;left:-2px;top:0;width:2px;height:0;background:linear-gradient(var(--accent),var(--accent2));transition:height .15s linear}
+.tl div.item{position:relative;padding:4px 0 26px}
+.tl div.item:last-child{padding-bottom:0}
+.tl div.item::before{content:"";position:absolute;left:-31px;top:10px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.tl span{display:block;color:var(--muted);font-size:14px}
+footer{padding:36px 0 44px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);position:relative;z-index:1;text-align:center;font-family:ui-monospace,monospace}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.l{transform:translateX(-40px)}
+.rv.show{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="prog"></div>
+<nav><div class="wrap"><b>zachyn<i>_</i></b><a href="#top">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+
+<main class="wrap">
+<header class="hero" id="top">
+  <span class="tag">Open to opportunities across Canada</span>
+  <h1>Hi, I’m <span>Zachyn</span></h1>
+  <div class="role" id="role" aria-label="Electronics Engineering Technician"></div>
+  <p class="lead">Based in Cranbrook, BC. I work across embedded systems, PCB design, and hardware prototyping, and I like building things that actually run.</p>
+  <div class="btns">
+    <a class="btn primary" href="#contact">Get in touch</a>
+    <a class="btn" href="#projects">See my work</a>
+    <a class="btn" href="https://github.com/iconicventures" rel="noopener">GitHub</a>
+  </div>
+  <div class="scroll"><i></i>scroll</div>
+</header>
+
+<section id="about">
+  <h2 class="rv"><small>01</small>About</h2>
+  <p class="rv" style="--d:.1s">I’m an Electronics Engineering Technician at Infiniti Electro Optics in Cranbrook, BC. My background mixes embedded systems, PCB design, and avionics-adjacent hardware, with some software on the side.</p>
+  <p class="rv" style="--d:.2s">I’m looking for electronics, robotics, embedded systems, and technician roles. Outside of work I build hardware and software projects to keep learning, and I’m happy to be upfront about what I know well and what I’m still picking up.</p>
+</section>
+
+<section id="projects">
+  <h2 class="rv"><small>02</small>Projects</h2>
+  <div class="grid">
+    <div class="card rv" style="--d:0s"><h3>Raspberry Pi people detection</h3><p>Headless Raspberry Pi 4 with an Arducam OV5647. Low-latency H.264 streaming over SSH, plus on-device YOLOv8n detection with ByteTrack tracking and Gmail snapshot alerts, all in Python.</p></div>
+    <div class="card rv" style="--d:.1s"><h3>Multi-function PCB concept</h3><p>Block-level design exploring an ESP32-WROOM, a small Ethernet switch, a DVP camera interface, and a USB-UART bridge, including GPIO budgeting. Design exploration so far, not a finished board.</p></div>
+    <div class="card rv" style="--d:.2s"><h3>Sprocket’s Circuit</h3><p>An original three-level browser platformer with a robot hero, power-ups, and synthesized audio. Built as a single self-contained HTML file.</p></div>
+    <div class="card rv" style="--d:.1s"><h3>Ledger</h3><p>A monthly expense tracker as an installable PWA with four themes, hosted on GitHub Pages.</p></div>
+    <div class="card rv" style="--d:.2s"><h3>Volt Merge</h3><p>A 2048-style puzzle with an electronics theme, playable in the browser.</p></div>
+    <div class="card rv" style="--d:.3s"><h3>Tessera</h3><p>A sliding picture puzzle with a gallery look, playable in the browser.</p></div>
+  </div>
+  <p class="rv" style="margin-top:22px"><a href="https://github.com/iconicventures" rel="noopener">See more on GitHub →</a></p>
+</section>
+
+<section id="skills" class="skills">
+  <h2 class="rv"><small>03</small>Skills</h2>
+  <h3 class="rv">Hardware</h3>
+  <div class="chips">
+    <span class="chip rv" style="--d:0s">Embedded systems</span><span class="chip rv" style="--d:.05s">PCB design</span><span class="chip rv" style="--d:.1s">ESP32</span><span class="chip rv" style="--d:.15s">Raspberry Pi</span><span class="chip rv" style="--d:.2s">Camera interfaces</span><span class="chip rv" style="--d:.25s">Prototyping &amp; troubleshooting</span>
+  </div>
+  <h3 class="rv">Software</h3>
+  <div class="chips">
+    <span class="chip rv" style="--d:0s">Python</span><span class="chip rv" style="--d:.05s">pandas / openpyxl</span><span class="chip rv" style="--d:.1s">HTML / CSS / JavaScript</span><span class="chip rv" style="--d:.15s">Linux over SSH</span><span class="chip rv" style="--d:.2s">YOLOv8 / computer vision basics</span><span class="chip rv" style="--d:.25s">Excel &amp; Power Query</span>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="rv"><small>04</small>Education</h2>
+  <div class="tl" id="tl"><div class="fill" id="fill"></div>
+    <div class="item rv l"><strong>Post-Graduate Certificate, Electronics and Embedded Systems Development</strong><span>Fanshawe College</span></div>
+    <div class="item rv l" style="--d:.15s"><strong>B.Eng., Electrical and Electronics Engineering</strong><span>Kerala Technological University</span></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="rv"><small>05</small>Contact</h2>
+  <p class="rv">The best way to reach me is by email or LinkedIn. I’m glad to share a resume on request.</p>
+  <div class="btns rv" style="--d:.1s">
+    <a class="btn primary" href="mailto:your.email@example.com">your.email@example.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/your-profile" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/iconicventures" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer>© Zachyn · Cranbrook, BC, Canada</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Reveal on scroll */
+  var rv = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('show');
+          var s = e.target.closest('section'); if(s) s.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  } else { rv.forEach(function(el){el.classList.add('show')}); document.querySelectorAll('section').forEach(function(s){s.classList.add('in')}); }
+
+  /* Typing role */
+  var roleEl = document.getElementById('role');
+  var roles = ['Electronics Engineering Technician','Embedded Systems Tinkerer','PCB & Hardware Prototyper'];
+  if(reduce){ roleEl.textContent = roles[0]; }
+  else {
+    var ri = 0, ci = 0, del = false;
+    (function tick(){
+      var w = roles[ri];
+      roleEl.textContent = w.slice(0,ci);
+      if(!del && ci < w.length){ ci++; setTimeout(tick,70); }
+      else if(!del){ del = true; setTimeout(tick,1500); }
+      else if(ci > 0){ ci--; setTimeout(tick,35); }
+      else { del = false; ri = (ri+1)%roles.length; setTimeout(tick,300); }
+    })();
+  }
+
+  /* Scroll progress, timeline fill, parallax, active nav */
+  var prog = document.getElementById('prog'), tl = document.getElementById('tl'), fill = document.getElementById('fill');
+  var hero = document.querySelector('.hero');
+  var links = [].slice.call(document.querySelectorAll('nav a'));
+  var secs = links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  var ticking = false;
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    var y = window.scrollY;
+    prog.style.transform = 'scaleX(' + (h>0 ? y/h : 0) + ')';
+    if(!reduce && y < innerHeight){ hero.style.transform = 'translateY(' + (y*0.18) + 'px)'; hero.style.opacity = Math.max(0,1 - y/(innerHeight*0.9)); }
+    var r = tl.getBoundingClientRect();
+    var p = Math.min(1,Math.max(0,(innerHeight*0.75 - r.top)/r.height));
+    fill.style.height = (p*100) + '%';
+    var cur = 0;
+    secs.forEach(function(s,i){ if(s.getBoundingClientRect().top < innerHeight*0.4) cur = i; });
+    links.forEach(function(a,i){ a.classList.toggle('on', i===cur); });
+    ticking = false;
+  }
+  addEventListener('scroll',function(){ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } },{passive:true});
+  addEventListener('resize',onScroll); onScroll();
+
+  /* Card glow follows pointer */
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('pointermove',function(e){
+      var b = c.getBoundingClientRect();
+      c.style.setProperty('--mx',(e.clientX-b.left)+'px');
+      c.style.setProperty('--my',(e.clientY-b.top)+'px');
+    });
+  });
+
+  /* Network background */
+  var cv = document.getElementById('bg'), ctx = cv.getContext('2d'), pts = [], W, H, mx = -999, my = -999;
+  function size(){
+    var d = Math.min(devicePixelRatio||1,2);
+    W = cv.width = innerWidth*d; H = cv.height = innerHeight*d;
+    ctx.setTransform(d,0,0,d,0,0);
+    var n = Math.min(70,Math.round(innerWidth*innerHeight/16000));
+    pts = [];
+    for(var i=0;i<n;i++) pts.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35});
+  }
+  addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY},{passive:true});
+  function draw(){
+    var rgb = getComputedStyle(document.documentElement).getPropertyValue('--node').trim() || '62,224,196';
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    var sy = window.scrollY*0.05;
+    for(var i=0;i<pts.length;i++){
+      var a = pts[i];
+      if(!reduce){ a.x += a.vx; a.y += a.vy; if(a.x<0||a.x>innerWidth) a.vx*=-1; if(a.y<0||a.y>innerHeight) a.vy*=-1; }
+      var ay = (a.y - sy + innerHeight) % innerHeight;
+      ctx.fillStyle = 'rgba('+rgb+',.55)'; ctx.beginPath(); ctx.arc(a.x,ay,1.8,0,6.283); ctx.fill();
+      for(var j=i+1;j<pts.length;j++){
+        var b = pts[j], by = (b.y - sy + innerHeight) % innerHeight;
+        var dx=a.x-b.x, dy=ay-by, dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<130){ ctx.strokeStyle='rgba('+rgb+','+(.22*(1-dist/130))+')'; ctx.beginPath(); ctx.moveTo(a.x,ay); ctx.lineTo(b.x,by); ctx.stroke(); }
+      }
+      var mdx=a.x-mx, mdy=ay-my, md=Math.sqrt(mdx*mdx+mdy*mdy);
+      if(md<160){ ctx.strokeStyle='rgba('+rgb+','+(.4*(1-md/160))+')'; ctx.beginPath(); ctx.moveTo(a.x,ay); ctx.lineTo(mx,my); ctx.stroke(); }
+    }
+    if(!reduce) requestAnimationFrame(draw);
+  }
+  size(); draw(); addEventListener('resize',function(){size(); if(reduce) draw();});
+})();
+</script>
+</body>
+</html>
